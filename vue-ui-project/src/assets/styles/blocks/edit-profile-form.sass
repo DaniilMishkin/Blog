@@ -1,0 +1,54 @@
+.edit-profile-form
+  display: flex
+  flex-direction: column
+  padding: 20px
+  gap: 20px
+  width: 100%
+  align-self: start
+
+.edit-profile-form__row
+  display: flex
+  align-items: center
+
+.edit-profile-form__row-title
+  display: flex
+  width: 25%
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+
+.edit-profile-form__change-pass-title-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  cursor: pointer
+
+.edit-profile-form__change-pas-title
+  display: flex
+  align-items: center
+  font-style: normal
+  font-weight: 450
+  font-size: 20px
+  cursor: pointer
+
+.arrow
+  width: 0
+  height: 0
+  border-top: 10px solid $border-dark-gray-color
+  border-right: 10px solid transparent
+  border-left: 10px solid transparent
+  transition: all .3s ease
+  cursor: pointer
+
+.arrow.active
+  transform: rotate(-180deg)
+
+.edit-profile-form__password-rows
+  display: flex
+  flex-direction: column
+  gap: 15px
+
+.edit-profile-form__buttons
+  display: flex
+  justify-content: end
+  gap: 20px

@@ -1,0 +1,29 @@
+// fade animation
+.fade-enter-active
+  transition: opacity .5s
+
+.fade-enter
+  opacity: 0
+
+// slide-fade-horizontal animation
+.slide-fade-horizontal-enter-active
+  transition: all .8s cubic-bezier(.4,-0.01,.56,1)
+
+.slide-fade-horizontal-leave-active
+  transition: all .8s cubic-bezier(.4,-0.01,.56,1)
+
+.slide-fade-horizontal-enter, .slide-fade-horizontal-leave-to
+  transform: translateX(10px)
+  opacity: 0
+
+// slide-fade-vertical animation
+.slide-fade-vertical-enter-active
+  transition: all 0.5s ease
+
+.slide-fade-vertical-leave-active
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1)
+
+.slide-fade-vertical-enter,
+.slide-fade-vertical-leave-to
+  transform: translateY(-120px)
+  opacity: 0

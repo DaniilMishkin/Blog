@@ -1,0 +1,29 @@
+.login-view
+  display: flex
+  justify-content: space-between
+  height: 100%
+  width: 100%
+  align-items: center
+
+.login-view__logo
+  display: none
+
+  @include media(min, s)
+    width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 20px
+
+.login-view__logo-img
+  width: 55%
+
+.login-view__logo-img img
+  width: 100%
+
+.login-view__logo-title
+  font-style: normal
+  font-weight: 700
+  font-size: 36px
+  color: $color-white

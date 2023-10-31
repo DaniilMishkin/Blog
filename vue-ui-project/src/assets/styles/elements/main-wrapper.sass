@@ -1,0 +1,17 @@
+.main-wrapper
+  display: flex
+  min-height: calc(100vh - 70px)
+  padding: 30px 30px
+  background: $background-color_theme_light
+
+  @include media(min, l)
+    padding: 30px 60px
+
+  @include media(min, xl)
+    padding: 30px 100px
+
+  @include media(min, xxl)
+    padding: 40px 150px
+
+.main-wrapper_vh_100
+  height: 100vh

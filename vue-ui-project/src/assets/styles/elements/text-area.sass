@@ -1,0 +1,30 @@
+.grow-wrap
+  max-height: 200px
+  display: grid
+
+.grow-wrap:hover
+  border: 1px solid $outline-pink-color
+  border-radius: 8px
+  outline: none
+
+.grow-wrap::after
+  content: attr(data-replicated-value) " "
+  white-space: pre-wrap
+  visibility: hidden
+
+.grow-wrap > textarea
+  resize: none
+
+.grow-wrap > textarea,
+.grow-wrap::after
+  border: 1px solid $border-light-gray-color
+  border-radius: 8px
+  max-height: 120px
+  padding: 16px 32px
+  font: inherit
+  outline-color: $outline-pink-color
+  grid-area: 1 / 1 / 2 / 2
+
+.grow-wrap:hover > textarea,
+.grow-wrap::after
+  border: none

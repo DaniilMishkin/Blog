@@ -1,0 +1,51 @@
+.header-menu-button
+  display: flex
+  align-items: center
+
+.header-menu-button__avatar
+  border-radius: 50%
+  height: 50px
+  width: 50px
+  margin-right: 10px
+  overflow: hidden
+  object-fit: cover
+
+.header-menu-button__icon
+  display: block
+  position: relative
+  width: 30px
+  height: 30px
+  cursor: pointer
+
+.header-menu-button__icon .header-menu-button__icon-span,
+.header-menu-button__icon::before, .header-menu-button__icon::after
+  left: 0
+  position: absolute
+  height: 8%
+  width: 100%
+  transition: all 0.3s ease 0s
+  background: white
+
+.header-menu-button__icon::before, .header-menu-button__icon::after
+  content: ""
+
+.header-menu-button__icon::before
+  top: 0
+
+.header-menu-button__icon::after
+  bottom: 0
+
+.header-menu-button__icon .header-menu-button__icon-span
+  top: 50%
+  transform: scale(1) translate(0px, -50%)
+
+.header-menu-button__icon.header-menu-button__icon_active .header-menu-button__icon-span
+  transform: scale(0) translate(0px, -50%)
+
+.header-menu-button__icon.header-menu-button__icon_active::before
+  top: 50%
+  transform: rotate(-45deg) translate(0px, -50%)
+
+.header-menu-button__icon.header-menu-button__icon_active::after
+  bottom: 50%
+  transform: rotate(45deg) translate(0px, 50%)

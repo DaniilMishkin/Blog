@@ -1,0 +1,19 @@
+.button
+  width: 100%
+
+.login-form
+  padding: 30px
+  display: flex
+  flex-direction: column
+  gap: 20px
+  width: 100%
+
+  @include media(min, s)
+    width: 50%
+
+.login-form__link
+  cursor: pointer
+  color: $link-blue-color
+
+.login-form__link:hover
+  color: $link-blue-color-hover
